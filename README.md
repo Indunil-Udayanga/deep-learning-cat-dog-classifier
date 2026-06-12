@@ -1,17 +1,31 @@
-# Cat vs Dog Classifier 🐱🐶
+# 🐱🐶 Deep Learning — Cat vs Dog Classifier
 
-Binary image classification using two approaches — a custom CNN and Transfer Learning (Xception) — built with TensorFlow/Keras.
+A deep learning project that classifies images as either a cat or a dog using two different approaches — a Custom CNN built from scratch and Transfer Learning using the Xception model.
 
-## Notebooks
+---
 
-| Notebook | Approach | Epochs |
+## What is this project?
+
+This project explores image classification using TensorFlow/Keras. The same dataset and pipeline are used for both approaches, making it easy to compare how a simple CNN performs against a powerful pretrained model.
+
+---
+
+## Approaches
+
+| Notebook | Method | Epochs |
 |---|---|---|
-| `cat_dog_classifier.ipynb` | Custom CNN (Conv2D × 3, Dropout, BatchNorm) | 20 |
-| `cat_dog_classifier_transfer_learning.ipynb` | Xception pretrained on ImageNet | 3 |
+| `cat_dog_classifier.ipynb` | Custom CNN — Conv2D × 3, Dropout, BatchNorm | 20 |
+| `cat_dog_classifier_transfer_learning.ipynb` | Transfer Learning — Xception (ImageNet) | 3 |
+
+---
 
 ## Dataset
 
-[Cats and Dogs for Classification](https://www.kaggle.com/datasets/dineshpiyasamara/cats-and-dogs-for-classification) — downloaded automatically via `opendatasets`.
+[Cats and Dogs for Classification — Kaggle](https://www.kaggle.com/datasets/dineshpiyasamara/cats-and-dogs-for-classification)
+
+Downloaded automatically inside the notebook using `opendatasets`.
+
+---
 
 ## Setup
 
@@ -19,10 +33,16 @@ Binary image classification using two approaches — a custom CNN and Transfer L
 pip install -r requirements.txt
 ```
 
-Then open either notebook in Google Colab or Jupyter and run all cells.
+Open either notebook in **Google Colab** or **Jupyter Notebook** and run all cells.
 
-## Results
+---
 
-Both models evaluated on Precision, Recall, and Binary Accuracy.  
-Transfer Learning converges in 3 epochs vs 20 for the custom CNN.
+## Key Takeaway
 
+Transfer Learning (Xception) achieves strong results in just **3 epochs** by reusing features learned from millions of ImageNet images — while the custom CNN requires **20 epochs** to train from scratch.
+
+---
+
+## Tech Stack
+
+`Python` `TensorFlow` `Keras` `NumPy` `Matplotlib` `OpenCV` `Kaggle`
